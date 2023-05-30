@@ -2,14 +2,16 @@ package IIPC_java;
 
 public class Student {
 	public static void main(String[]args) {
-		
+		Student1 s1=new Student1("mihir",1,9082832,21);
+		s1.getName();
+		s1.display();
 	}
 
 }
 class Student1{
  private String name;
  private int id;
- private int mobileno;
+ private long mobileno;
  private int age;
  Student1(String n,int id,int mo,int age){
 	 this.name=n;
@@ -23,7 +25,7 @@ class Student1{
  public int getid() {
 	 return this.id;
  }
- public int getmobile() {
+ public long getmobile() {
 	 return this.mobileno;
  }
  public int getage() {
